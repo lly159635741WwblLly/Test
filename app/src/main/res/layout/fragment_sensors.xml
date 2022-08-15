@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/MainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="parent"
+            tools:context="com.example.activitylife.MainActivity">
+
+
+            <LinearLayout
+                android:id="@+id/seventhLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbg"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seventhLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:text="No Data" />
+
+                <TextView
+                    android:id="@+id/linearaccelerationData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="TextView" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linearaccelerationChart_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linearaccelerationChart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linearaccelerationChart_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbg"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:text="No Data" />
+
+                <TextView
+                    android:id="@+id/accelerationData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="TextView" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/accelerationChart_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/accelerationChart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/accelerationChart_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/secondLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundcornerbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/secondLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/lightSensorData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="No Data" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbg"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trdLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/proximityData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="No Data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundcornerbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fourthLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/gyroscopeData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="No Data" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/gyroscopeChart_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/gyroscopeChart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/gyroscopeChart_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundcornerbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fifthLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/rotationData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="No Data" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/rotationChart_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/rotationChart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/rotationChart_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_above="@+id/seekBar1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbg"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sixthLayoutType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/ivory"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/batterySensors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:text="No Data" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
